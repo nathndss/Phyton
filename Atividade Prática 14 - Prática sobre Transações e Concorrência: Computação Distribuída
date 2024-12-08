@@ -1,0 +1,13 @@
+from functools import reduce
+
+numbers = [5, 6, 8, 10, 11, 20]
+
+mapped = map(lambda x: x*x, numbers)
+
+result = reduce (lambda x, y: x+y, mapped)
+
+print("Resultado usando MapReduce:", result)
+
+
+
+
